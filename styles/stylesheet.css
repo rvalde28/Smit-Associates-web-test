@@ -35,6 +35,26 @@ p{
     float: right;
 }
 
+.mid-wrapper{
+    width: 100%;
+    display:table;
+}
+
+.content-wapper{
+    width: 90%;
+    float:right;
+}
+.mid-wrapper::before{
+    display:table;
+    content: "";
+}
+
+/*Main container */
+.main-container{
+    width:100%;
+    background-color: red;
+    height: 500px;
+}
 
 
 /* 
@@ -42,6 +62,7 @@ p{
 */
 .leftContainer{
     float:left;
+    width:30%;
 }
 
 /* 
@@ -49,6 +70,7 @@ p{
 */
 .midContainer{
     float:left;
+    width: 30%;
 }
 
 /* 
@@ -56,4 +78,16 @@ p{
 */
 .rightContainer{
     float: left;
+    width: 30%;
+}
+
+.footer{
+    width: 100%;
+}
+
+/*media width for small screens*/
+@media only screen 
+and (max-width : 543px) {
+width:100%;
+/* Styles */
 }
