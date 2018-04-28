@@ -38,6 +38,9 @@ p{
 .mid-wrapper{
     width: 100%;
     display:table;
+    border-color: black;
+    border-style:solid;
+    border-width: 3px;
 }
 
 .content-wapper{
@@ -55,39 +58,135 @@ p{
     background-color: red;
     height: 500px;
 }
+/*************
+Used across all boxes
+**************/
+.image-box{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
 
 
-/* 
-    left container
-*/
+.box-title{
+    
+}
+
+/****************
+  left container
+****************/
 .leftContainer{
     float:left;
-    width:30%;
+    width:33.33%;
 }
 
-/* 
-    mid container
-*/
+.left-wrapper{
+    width:100%;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.box-padding{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.lt-1{
+    border-color: green;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.lt-2{
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.lt-3{
+    border-color: blue;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.lt-4{
+    border-color: orange;
+    border-style: solid;
+    border-width: 3px;
+}
+/****************
+  mid container
+****************/
 .midContainer{
     float:left;
-    width: 30%;
+    width: 33.33%;
+}
+.mid-wrapper{
+    width:100%;
+    padding-left: 20px;
+    padding-right:20px;
+}
+.mid-1{
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
 }
 
-/* 
+.mid-2{
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.mid-3{
+    border-color: yellow;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.mid-4{
+    border-color: orangered;
+    border-style: solid;
+    border-width: 3px;
+}
+
+/* ******************
     right container
-*/
+*********************/
 .rightContainer{
     float: left;
-    width: 30%;
+    width: 33.33%;
 }
+.right-wrapper{
+    width:100%;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.rt-1{
+    border-color: lime;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.rt-2{
+    border-color: magenta;
+    border-style: solid;
+    border-width: 3px;
+}
+
+
+/******************
+   footer
+******************/
 
 .footer{
     width: 100%;
 }
 
-/*media width for small screens*/
-@media only screen 
-and (max-width : 543px) {
-width:100%;
-/* Styles */
-}
+/*media width for small screens
+@media screen and (max-width : 543px) {
+    width:100%;
+}*/
