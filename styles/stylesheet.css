@@ -81,8 +81,6 @@ Used across all boxes
 }
 
 .left-wrapper{
-    width:100%;
-    padding-left: 20px;
     padding-right:20px;
 }
 
@@ -123,8 +121,7 @@ Used across all boxes
     float:left;
     width: 33.33%;
 }
-.mid-wrapper{
-    width:100%;
+.middle-wrapper{
     padding-left: 20px;
     padding-right:20px;
 }
@@ -158,11 +155,9 @@ Used across all boxes
 .rightContainer{
     float: left;
     width: 33.33%;
-}
+}                    
 .right-wrapper{
-    width:100%;
     padding-left: 20px;
-    padding-right:20px;
 }
 
 .rt-1{
