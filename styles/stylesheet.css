@@ -1,3 +1,59 @@
 p{
     font-size: 16px;
 }
+
+/* 
+    top bar
+*/
+.top-nav{
+    width:100%;
+    clear: left;
+    display:table;
+    height:auto;
+}
+
+.logo{
+    float:left;
+    padding: 10px 15px 10px 15px;
+}
+
+.logo::after{
+    content: " ";
+    display: table;
+}
+
+.menu{
+    float:right;
+    padding: 10px 15px 10px 15px;
+}
+
+.menu-text{
+    float:left;
+}
+
+.menu-bar{
+    float: right;
+}
+
+
+
+/* 
+    left container
+*/
+.leftContainer{
+    float:left;
+}
+
+/* 
+    mid container
+*/
+.midContainer{
+    float:left;
+}
+
+/* 
+    right container
+*/
+.rightContainer{
+    float: left;
+}
