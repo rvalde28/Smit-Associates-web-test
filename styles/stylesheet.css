@@ -1,30 +1,139 @@
+.side-bar {
+    height: 100%; /* change for mobile */
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: white; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+ 
+
+.side-bar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+ 
+
+.side-bar a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    background-color: black;
+}
+
+.side-bar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+ 
+ 
+
+.top-nav {
+    background-color: white;
+    overflow: hidden;
+}
+ 
+
+.top-nav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+ 
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+ 
+/* for active link */
+.top-nav a.active {
+   
+}
+ 
+ 
+a svg{
+  transition:all .5s ease;
+ 
+  &:hover{
+    #transform:rotate(180deg);
+  }
+}
+ 
+
+
+
+
 p{
     font-size: 17px;
 }
 
-/* 
-    top bar
-*/
-.top-nav{
-    width:100%;
-    clear: left;
-    display:table;
-    height:auto;
+body{
+
 }
 
+
 .logo{
+    min-width:10%;
+    max-width:50%;
     float:left;
-    padding: 10px 15px 10px 15px;
+    font-size: 35px;
+    border-color: black;
+    border-style:solid;
+    border-width: 4px;
+    display: inline-block;
+
+    word-break: break-all; /* optional */
+
+
 }
+
+.logo-rev{
+    float:left;
+    padding: 1px;
+    font-size: 35px;
+    color:white;
+    border-color: white;
+    border-style:solid;
+    border-width: 4px;
+
+}
+
 
 .logo::after{
     content: " ";
     display: table;
 }
 .page-wrapper{
-    /*width: 1912px;*/
-    width: 100%;
+    /*width: 1912px;
+    transition: margin-left .5s;
+    padding: 20px;
+    overflow:hidden;*/
+    width:100%;
 }
+
+
+.close-bar{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 
 .menu{
     float:right;
@@ -32,7 +141,10 @@ p{
 }
 
 .menu-text{
-    float:left;
+    float: left;
+    padding-right: 25px;
+    font-size: 25px;
+    text-align:center;
 }
 
 .menu-bar{
@@ -42,9 +154,6 @@ p{
 .mid-wrapper{
     width: 100%;
     display:table;
-    border-color: black;
-    border-style:solid;
-    border-width: 3px;
 }
 
 .content-wapper{
@@ -80,6 +189,7 @@ Used across all boxes
 }
 
 .box-but{
+
     padding: 10px;
     border-color: #E4E4E4;
     border-width: 2px;
@@ -91,6 +201,12 @@ Used across all boxes
 .but-text{
     font-size: 14px;
     padding: 5px 5px 5px 5px;
+}
+
+.box-border{
+    border-color: #DFDFDF;
+    border-style: solid;
+    border-width: 1px;
 }
 
 /****************
@@ -106,19 +222,20 @@ Used across all boxes
 }
 
 .box-padding{
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 .lt-1{
-    border-color: green;
-    border-style: solid;
+    border-color: #DFDFDF;
+
     border-width: 3px;
 }
 
 .lt-2{
-    border-color: red;
-    border-style: solid;
+    border-color: #DFDFDF;
+
     border-width: 3px;
 }
 
@@ -138,14 +255,14 @@ Used across all boxes
 
 }
 .lt-3{
-    border-color: blue;
-    border-style: solid;
+    border-color: #DFDFDF;
+
     border-width: 3px;
 }
 
 .lt-4{
-    border-color: orange;
-    border-style: solid;
+    border-color: #DFDFDF;
+
     border-width: 3px;
 }
 /****************
@@ -160,26 +277,26 @@ Used across all boxes
     padding-right:10px;
 }
 .mid-1{
-    border-color: black;
-    border-style: solid;
+    border-color: #DFDFDF;
+
     border-width: 3px;
 }
 
 .mid-2{
-    border-color: red;
-    border-style: solid;
+    border-color: #DFDFDF;
+
     border-width: 3px;
 }
 
 .mid-3{
-    border-color: yellow;
-    border-style: solid;
+    border-color: #DFDFDF;
+
     border-width: 3px;
 }
 
 .mid-4{
-    border-color: orangered;
-    border-style: solid;
+    border-color: #DFDFDF;
+
     border-width: 3px;
 }
 
@@ -196,13 +313,13 @@ Used across all boxes
 
 .rt-1{
     border-color: lime;
-    border-style: solid;
+
     border-width: 3px;
 }
 
 .rt-2{
     border-color: magenta;
-    border-style: solid;
+
     border-width: 3px;
 }
 
@@ -219,10 +336,13 @@ Used across all boxes
 }
 
 .footer-wrapper{
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top:    50px;
-    padding-bottom: 50px;
+    width:80%;
+    padding:50px;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    display:inline-block;
+
 }
 
 .social-container{
@@ -235,7 +355,9 @@ Used across all boxes
     float: left;
 }
 .right-footer{
-    width:80%;
+    width:65%;
+    padding-right: 10%;
+    padding-left:5%;
     height: 200px;
     float: right;
     display: inline-block;
@@ -273,8 +395,15 @@ Used across all boxes
     font-size: 15px;
     color: #65686D;
 }
+
+.footer-text:hover{
+    color:white;
+}
+
 .footer-buttons{
-    width:80%;
+    width:65%;
+    padding-right: 10%;
+    padding-left:5%;
     float:right;
 }
 
@@ -287,18 +416,63 @@ Used across all boxes
     padding-right: 15px;
 }
 .bf-wrapper{
+    background-color: black;
     border-color: #393939;
     border-width: 2px;
     border-style: solid;
     display: inline-block;
     width: 100%;
 }
+
+.bf-wrapper:hover{
+    background-color: gray;
+}
+
 .bf-text{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right:30px;
 }
+
+.social-logos{
+    padding-right: 50px;
+    padding-left:  50px;
+    height:80%;
+}
+.social-icon{
+    width:10%;
+    height:10%;
+}
+
+.copyright{
+    width: 100%;
+}
+.owdt-logo{
+    width: 100%;
+}
+.dot-break{
+    display:none;
+}
+
+.dot1{
+    display:none;
+}
+
+.dot2{
+    display:none;
+}
+
+.dot3{
+    display:none;
+}
+
+.center{
+    margin:auto;
+    width: 15%;
+    text-align: center;
+}
+
 @media screen and (max-width : 756px) {
     .page-wrapper{
         width:100%;
@@ -313,16 +487,72 @@ Used across all boxes
         padding-left: 10px;
         padding-right: 10px;
     }
+    .side-bar {
+        padding-top: 15px;
+    }
+    .side-bar a {
+        font-size: 18px;
+    }
     /*footer*/
     .footer-wrapper{
-        padding-left:20px;
-        padding-right:20px;
+        width: 100%;
+        padding:0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top:0px;
     }
     
-    .right-footer{
-        float: left;
-        width:25%;
+    .left-footer{
+        height: 20%;
+        width: 100%;
+    }    
 
+    .right-footer{
+        width:90%;
+        float: left;
+        height: 40%;
+        padding-left:5%;
+        padding-right:5%;
+
+    }
+
+    .dot-break{
+        width:100%;
+        display: inline-block;
+        height: 50px;
+    }
+    .dot1{
+        height: 10px;
+        width: 10px;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .dot2{
+        height: 10px;
+        width: 10px;
+        background-color: gold;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .dot3{
+        height: 10px;
+        width: 10px;
+        background-color: blue;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .logo-rev{
+        display:none;
+    }
+    .footer-buttons{
+        width:90%;
+        float: left;
+        height: 40%;
+        padding-left:5%;
+        padding-right:5%;
     }
     .info-left{
         float: left;
@@ -343,12 +573,8 @@ Used across all boxes
         float: left;
         width:25%;
     }
-    .dot-break{
 
-    }
 
-    .footer-buttons{
 
-    }
 
 }
