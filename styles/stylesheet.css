@@ -80,11 +80,12 @@ Used across all boxes
 }
 
 .box-but{
-    width: auto;
-    height: 40px;
+    padding: 10px;
     border-color: #E4E4E4;
     border-width: 2px;
+    border-style: solid;
     background-color: white;
+    display: inline-block;
 }
 
 .but-text{
@@ -212,9 +213,93 @@ Used across all boxes
 
 .footer{
     width: 100%;
+    height: 500px;  
+    background-color: black;
+    color: white;
 }
 
-@media screen and (max-width : 800px) {
+.footer-wrapper{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top:    50px;
+    padding-bottom: 50px;
+}
+
+.social-container{
+
+}
+
+.left-footer{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.right-footer{
+    width:80%;
+    height: 200px;
+    float: right;
+    display: inline-block;
+}
+.rf-wrapper{
+
+}
+.info-left{
+    width:25%;
+    float:left;
+}
+
+.info-mid{
+    float:left;
+    width:25%;
+}
+
+.info-mid2{
+    float:left;
+    width:25%;
+}
+
+.info-right{
+    width:25%;
+    float:left;
+}
+.footer-title{
+    font-size: 25px;
+
+}
+
+.footer-text{
+    line-height: 1.5;
+    padding:5px;
+    font-size: 15px;
+    color: #65686D;
+}
+.footer-buttons{
+    width:80%;
+    float:right;
+}
+
+.footer-but{
+    width:25%;
+    float:left;
+}
+.bf-padding{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bf-wrapper{
+    border-color: #393939;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    width: 100%;
+}
+.bf-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right:30px;
+}
+@media screen and (max-width : 756px) {
     .page-wrapper{
         width:100%;
     }
@@ -228,4 +313,42 @@ Used across all boxes
         padding-left: 10px;
         padding-right: 10px;
     }
+    /*footer*/
+    .footer-wrapper{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    
+    .right-footer{
+        float: left;
+        width:25%;
+
+    }
+    .info-left{
+        float: left;
+        width:25%;
+    }
+    
+    .info-mid{
+        float: left;
+        width:25%;
+    }
+    
+    .info-mid2{
+        float: left;
+        width:25%;
+    }
+
+    .info-right{
+        float: left;
+        width:25%;
+    }
+    .dot-break{
+
+    }
+
+    .footer-buttons{
+
+    }
+
 }

@@ -13,6 +13,7 @@ Things to do:<br />
 
 April 28: 5:56pm<br/>
 -added div to wrap contents for the middle of the page<br/>
+-change font size for all of the paragraphs<br/>
 -added temporary border for me to see padding(take these off)<br/>
 -made the website responsive by using percentages<br/>
 -added function to change background color(need to test)<br/>
