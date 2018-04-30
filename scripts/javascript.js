@@ -34,3 +34,4 @@ function closeNav() {
 $('div.ad-box').click(function() {
     changeBackColor()
 });
+

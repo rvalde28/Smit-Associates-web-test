@@ -15,7 +15,7 @@ i{
     z-index: 1; 
     top: 0;
     right: 0;
-    background-color: white; 
+    background-color: #e7e7e7; 
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -71,7 +71,7 @@ i{
  
 /* for active link */
 .top-nav a.active {
-   
+   background-color:red;
 }
  
  
@@ -133,7 +133,8 @@ body{
     transition: margin-left .5s;
     padding: 20px;
     overflow:hidden;*/
-    width:100%;
+    width: 100%;
+    max-width:1912px;
 }
 
 
@@ -486,10 +487,39 @@ Used across all boxes
 
 .copyright{
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 .owdt-logo{
     width: 100%;
+    float:right;
+    color:white;
+    display: inline-block;
 }
+
+.owdt-right{
+    width: 12%;
+    float:right;
+    display:inline-block;
+}
+
+.owdt-text{
+    float:left;
+    font-size: 40px;
+    display:inline-block;
+}
+.owdt-mid{
+    width:4px;
+    font-size:40px;
+    display:inline-block;
+}
+
+.web-des{
+    float:right;
+    bottom:0;
+}
+
+
 .dot-break{
     display:none;
 }
@@ -701,6 +731,9 @@ Used across all boxes
         width:50%;
         text-align:center;
         height:100%;
+    }
+    .owdt-right{
+        width:40%;
     }
 
 

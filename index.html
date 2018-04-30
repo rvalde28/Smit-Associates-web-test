@@ -13,6 +13,7 @@
 <!--Top Nav bar icon-->
         <div id="side-bar" class="side-bar">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
           <a href="#">About</a>
           <a href="#">Features</a>
           <a href="#">Contact Us</a>
@@ -30,9 +31,9 @@
          
  
 
-          <a href="#" onclick="openNav()">
-            <div class="menu-text">Menu</div>
-            <svg width="30" height="30" id="icoOpen">
+          <a href="#" onclick="openNav()" id="menu-open">
+            <div class="menu-text" id="open">Menu</div>
+            <svg width="30" height="30" >
                 <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
                 <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
                 <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
@@ -532,10 +533,56 @@
 
 
         <div id="OWDT-logo" class="owdt-logo">
+            <div class="owdt-right">
+                <div class="owdt-text">OWDT</div>
+                <div class = "owdt-mid">|</div>
+                <div class="web-des">
+                    <div>website</div>
+                    <div>design</div>
+                </div>
+            </div>
         </div>
         
     </div>
 
+    <script>
+    //set background color on click
+        function changeBackColor(){
+           
+                var currentColor = document.body.style.backgroundColor 	
+                var colors = ["blue", "red","green","yellow","magenta","white"]
+	            var number = Math.floor(Math.random() * 6);
+                var choice = colors[number]
+                while(true){
+                    if(document.body.style.backgroundColor == choice){
+                        var number = Math.floor(Math.random() * 5);
+                        var choice = colors[number]
+                    }
+                    else{
+                        break;
+                    }
+                }
+	        document.body.style.background = choice;
+        }
+
+        //open menu bar
+        function openNav() {
+            document.getElementById("side-bar").style.width = "250px";
+            document.getElementById("page-wrapper").style.marginRight = "250px";
+        }
+         
+        //close menu bar
+        function closeNav() {
+            document.getElementById("side-bar").style.width = "0";
+            document.getElementById("page-wrapper").style.marginRight = "0";
+        }
+
+        //call change back ground function by div
+        $('div.ad-box').click(function() {
+            changeBackColor()
+        });
+
+    </script>
 
 </body>
 </html>
