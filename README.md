@@ -2,7 +2,10 @@
 
 Link to Website: https://rvalde28.github.io/Smit-Associates-web-test/
 
-Website is working on google chrome. Not sure why it is not working on firefox. To see the webpage follow the link
+Website is working on google chrome. Not sure why it is not working on firefox. To see the webpage follow the link<br/>
+<br/>
+
+You could also download/clone the repository and open the html file to see the contents. It appears to be some issues with hosting it on github. <br/>
 
 
 
