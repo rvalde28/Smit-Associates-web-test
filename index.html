@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel = "stylesheet" type="text/css" href="styles/stylesheet.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script type="text/javascript" src="javascript.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   	<link rel = "stylesheet" type="text/css" href="styles/stylesheet.css"/>
+    <script type="text/javascript" src="scripts/javascript.js"> </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -21,8 +22,10 @@
       
 
         <nav class="top-nav">
-        <div id="smith-logo" class = "logo">
-            SMITH
+        <div class="smith-pad">
+            <div id="smith-logo" class = "logo">
+                SMITH
+            </div>
         </div>
          
  
@@ -44,7 +47,7 @@
             <div class="content-wapper">
                 <!--Main jumbotron -->
                  <div id="main-container" class="main-container">
-                    
+                    <img src="images/cup.jpg" alt="coffee">
                 </div>
 
                 <!--left column container -->
@@ -56,6 +59,7 @@
                                 <!-- image for smith intel distribution-->
                                 <div class="box-border">
                                     <div id="intel-img" class="image-box">
+                                        <img src="images/bottle.jpg" alt="bottle">
                                     </div>
 
                                     <div class="box-contents">
@@ -93,7 +97,7 @@
                             <div id="operations">
                                 <div class="box-border">
                                     <div id="operations-img" class="image-box">
-
+                                        <img src="images/laptop.jpg" alt="laptop">
                                     </div>
                                     <div class="box-contents">
                                         <div id="operations-title">
@@ -123,7 +127,7 @@
 
                         <!--Promotion-->
                         <div class="lt-4 box-padding">
-                            <div id="promotion">
+                            <div id="promotion" class="promo-box">
                                 <div class="box-contents">
                                     <div id="promo-title">
                                         <h3>Check Out Our Holiday Sales on SmithBuy.com</h3>
@@ -161,6 +165,7 @@
                             <!--image for market intelligence-->
                             <div class="box-border">
                                 <div id="mrk-img" class="image-box">
+                                    <img src="images/type.jpg" alt="type">
                                 </div>
                                 
                                 <div class="box-contents">
@@ -184,6 +189,7 @@
                         <div id="industries" class="mid-3 box-padding">
                             <div class="box-border">
                                 <div id = "ind-image" class="image-box">
+                                    <img src="images/desk.jpg" alt="desk">
                                 </div>
                                 
                                 <div class="box-contents">
@@ -223,6 +229,7 @@
                         <div id="procurement" class="mid-4 box-padding">
                             <div class="box-border">
                                 <div id="proc-img">
+                                    <img src="images/coffee.jpg" alt="coffee">
                                 </div>
 
                                 <div class="box-contents">
@@ -264,6 +271,8 @@
                                 <div id="supply-chain" class="rt-1 box-padding">
                                     <div class="box-border">
                                         <div id="supply-img" class="image-box">
+                                            <img src="images/board.jpg" alt="board">
+
                                         </div>
 
                                         <div class="box-contents">
@@ -327,6 +336,7 @@
                                 <div id="commodity expertise" class="rt-2 box-padding">
                                     <div class="box-border">
                                         <div id="com-img" class="image-box">
+                                            <img src="images/charts.jpg" alt="charts">
                                         </div>
 
                                         <div class="box-contents">
@@ -338,16 +348,22 @@
                                             <p>Smith offers expertise in commodity supply sources, market values, and testing and counterfeit detection. Specializing in Memory, HDD, Optical, LCD, ICs, and CPUs/chipsets, Smith provides critical commodity market information to our partners. Let Smith's experts work for you:
                                             </p>
                                             </div>
-                                            <div id="proc-upload" class = "box-but">
-                                                <div class="box-text">Upload a BOM</div>
+                                            <div class="button-padding">
+                                                <div id="proc-upload" class = "box-but">
+                                                    <div class="box-text">Upload a BOM</div>
+                                                </div>
                                             </div>
 
-                                            <div id="proc-readmore" class = "box-but">
-                                                <div class="box-text">Submit a Requirement</div>
+                                            <div class="button-padding">
+                                                <div id="proc-readmore" class = "box-but">
+                                                    <div class="box-text">Submit a Requirement</div>
+                                                </div>
                                             </div>
 
-                                            <div id="proc-readmore" class = "box-but">
-                                                <div class="box-text">Commodity Testing</div>
+                                            <div class="button-padding">
+                                                <div id="proc-readmore" class = "box-but">
+                                                    <div class="box-text">Commodity Testing</div>
+                                                </div>
                                             </div>
 
                                         </div>
@@ -370,19 +386,21 @@
                 </div>
 
                 <div id="social-media-logos" class="social-logos">
-                    <div id="facebook" class="social-icon">F            
-                    </div>
+                    <div class="center-logos">
+                        <div id="facebook" class="social-icon"><i href="#" class="fa fa-facebook""></i>            
+                        </div>
 
-                    <div id="twitter" class="social-icon">T
-                    </div>
+                        <div id="twitter" class="social-icon"><i href="#" class="fa fa-twitter"></i>
+                        </div>
 
-                    <div id="linkedin" class="social-icon">L
-                    </div>
+                        <div id="linkedin" class="social-icon"><i href="#" class="fa fa-linkedin"></i>
+                        </div>
 
-                    <div id="sms" class="social-icon">S
-                    </div>
+                        <div id="sms" class="social-icon"><i href="#" class="fa fa-weixin"> </i>
+                        </div>
 
-                    <div id="email" class="social-icon">E
+                        <div id="email" class="social-icon"><i href="#" class="fa fa-envelope"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -518,38 +536,6 @@
         
     </div>
 
-   <script>
-function changeBackColor(){
-   
-        var currentColor = document.body.style.backgroundColor 	
-        var colors = ["blue", "red","green","yellow","magenta","white"]
-	    var number = Math.floor(Math.random() * 6);
-        var choice = colors[number]
-        while(true){
-            if(document.body.style.backgroundColor == choice){
-                var number = Math.floor(Math.random() * 5);
-                var choice = colors[number]
-            }
-            else{
-                break;
-            }
-        }
-	document.body.style.background = choice;
-}
-function openNav() {
-    document.getElementById("side-bar").style.width = "250px";
-    document.getElementById("page-wrapper").style.marginRight = "250px";
-}
- 
-function closeNav() {
-    document.getElementById("side-bar").style.width = "0";
-    document.getElementById("page-wrapper").style.marginRight = "0";
-}
-
-$('div.ad-box').click(function() {
-    changeBackColor()
-});
-   </script>
 
 </body>
 </html>
